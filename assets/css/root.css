@@ -1,0 +1,88 @@
+@font-face {
+    font-family: "Futura PT";
+    src: url(font/Futura-PT-1/FuturaPTMedium.otf) format("opentype");
+    font-weight: 500;
+}
+
+@font-face {
+    font-family: "Futura PT";
+    src: url(font/Futura-PT-1/FuturaPTHeavy.otf) format("opentype");
+    font-weight: 900;
+}
+
+@font-face {
+    font-family: "Space Mono";
+    src: url(font/Space_Mono/SpaceMono-Regular.ttf) format('truetype');
+}
+
+@font-face {
+    font-family: "Space Mono";
+    src: url(font/Space_Mono/SpaceMono-BoldItalic.ttf) format('truetype');
+    font-style: italic;
+    font-weight: bold;
+}
+
+
+@font-face {
+    font-family: "FilsonPro";
+    src: url(font/filson-pro/FilsonProBold.woff) format('woff');
+    font-weight: bold;
+}
+
+:root {
+
+    /* Colors: */
+    --color-1c1b20: #1C1B20;
+    --color-ffffff: #FFFFFF;
+    --color-12bab9: #12BAB9;
+    --color-32efdb: #32EFDB;
+    --color-000000: #000000;
+    ---color-3aecde: #3AECDE;
+
+    /* Font/text values */
+    --font-family-futura-pt: "Futura PT";
+    --font-family-space-mono: "Space Mono";
+    --font-style-oblique: oblique;
+    --font-style-normal: normal;
+    --font-style-italic: italic;
+    --font-weight-900: 900;
+    --font-weight-medium: 500;
+    --font-weight-bold: bold;
+    --font-weight-normal: normal;
+    --font-size-16: 16px;
+    --font-size-18: 18px;
+    --font-size-22: 22px;
+    --font-size-26: 26px;
+    --font-size-30: 30px;
+    --font-size-32: 32px;
+    --font-size-40: 40px;
+    --font-size-48: 48px;
+    --font-size-64: 64px;
+    --font-size-65: 65px;
+    --character-spacing--0-16: -0.16px;
+    --character-spacing--0-4: -0.4px;
+    --character-spacing--0-72: -0.72px;
+    --character-spacing--0-26: -0.26px;
+    --character-spacing--0-32: -0.32px;
+    --character-spacing--0-48: -0.48px;
+    --character-spacing--0-22: -0.22px;
+    --line-spacing-22: 22px;
+    --line-spacing-30: 30px;
+    --line-spacing-32: 32px;
+    --line-spacing-48: 48px;
+    --line-spacing-80: 80px;
+    --text-transform-uppercase: uppercase;
+}
+
+.container {
+    max-width: calc(100% - (2 * (var(--bs-gutter-x) * .5)));
+}
+
+html,
+body {
+    overflow-x: hidden;
+}
+
+a {
+    text-decoration: none;
+}

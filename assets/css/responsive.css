@@ -1,0 +1,27 @@
+@charset "UTF-8";
+
+@media (max-width:768px) {
+
+    body#login,body#sign_up{
+        background-color: #212529 !important;
+    }
+
+    div#login{
+        padding: 1em !important;
+    }
+
+    div#sign_up{
+        padding: 0em !important;
+    }
+}
+
+@media (max-width:320px) {
+
+    div#sign_up,div#login{
+        font-size: .7em !important;
+    }
+
+    div#sign_up{
+        padding: 0px !important;
+    }
+}

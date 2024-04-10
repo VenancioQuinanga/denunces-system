@@ -1,0 +1,111 @@
+.topics {
+    min-height: 100vh;
+    background-size: cover;
+    position: relative;
+    padding-bottom: 50px;
+}
+
+.topics .background {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    height: calc(100% - 170px);
+    opacity: 1;
+    width: auto;
+}
+
+.topics .container {
+    padding-top: 3%;
+}
+
+.topics .title-page {
+    color: white;
+    text-transform: uppercase;
+    font: var(--font-style-oblique) normal var(--font-weight-900) var(--font-size-64)/var(--line-spacing-80) var(--font-family-futura-pt);
+    letter-spacing: var(--character-spacing--0-72);
+}
+
+.content .title {
+    font: var(--font-style-italic) normal var(--font-weight-bold) var(--font-size-30)/var(--line-spacing-48) var(--font-family-space-mono);
+    letter-spacing: var(--character-spacing--0-32);
+    color: var(--color-1c1b20);
+    text-align: center;
+    background-color: var(--color-32efdb);
+    padding: 0 5px;
+}
+
+.content .title::before {
+    content: '*';
+}
+
+.content .title::after {
+    content: '?';
+}
+
+.content p {
+    font: var(--font-style-normal) normal var(--font-weight-medium) var(--font-size-18)/var(--line-spacing-32) var(--font-family-futura-pt);
+    letter-spacing: var(--character-spacing--0-26);
+    color: var(--color-ffffff);
+    text-align: left;
+    margin-top: 8px;
+}
+
+.join {
+    background-color: white;
+    font: var(--font-style-normal) normal var(--font-weight-bold) 24px/var(--line-spacing-48) var(--font-family-space-mono);
+    color: var(--color-000000);
+    text-align: center;
+    max-width: 332px;
+}
+
+.join::before {
+    content: '<';
+}
+
+.join::after {
+    content: '>';
+}
+
+
+.topics .content {
+    z-index: 1;
+}
+
+@media (max-width: 1627px) {
+    .topics .background {
+        max-width: 50%;
+        height: auto;
+    }
+}
+
+@media (max-width: 600px) {
+    .topics .background {
+        position: relative;
+        bottom: -50;
+        margin-left: auto;
+        margin-right: auto;
+        max-width: 100% !important;
+    }
+
+    .topics .title-page {
+        font: var(--font-style-oblique) normal var(--font-weight-900) var(--font-size-40)/var(--line-spacing-48) var(--font-family-futura-pt);
+        letter-spacing: var(--character-spacing--0-48);
+        text-align: center;
+    }
+
+    .topics .title {
+        font: var(--font-style-italic) normal var(--font-weight-bold) 20px/var(--line-spacing-48) var(--font-family-space-mono);
+        color: var(--color-1c1b20);
+        text-align: center;
+    }
+
+    .content {
+        text-align: center;
+    }
+
+    .content p {
+        font: var(--font-style-normal) normal var(--font-weight-medium) var(--font-size-18)/var(--line-spacing-22) var(--font-family-futura-pt);
+        letter-spacing: var(--character-spacing--0-16);
+        text-align: center;
+    }
+}
